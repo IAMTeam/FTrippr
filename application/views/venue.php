@@ -2,6 +2,4 @@
 
 This is the page for a single venue!
 
-GIT testing...
-
 <?php $this->load->view('shared/footer'); ?>
