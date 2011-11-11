@@ -1,0 +1,179 @@
+/* @override http://stage.weareroot.org/css/jeremy.css */
+
+/* @override http://localhost:8888/Stage-Login/css/style.css */
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+/* style */
+
+html{max-width: 640px;}
+
+body { width: 100%; 
+    background-color: #354b59; padding: 20px; }
+
+@font-face {
+    font-family: 'FranklinGothicStd-DmCd';
+    src: url('../fonts/ITCFranklinGothicStd-DmCd.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+button {
+    width: 180px;
+    height: 115px;
+    color: #354b59;
+    font: normal 22px/115px 'FranklinGothicStd-DmCd';
+    text-transform: uppercase;    
+    background-color: #c0db36;
+    border: 6px solid #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 13, 23, 0.72), 0 1px 0 rgba(255, 255, 255, 0.62);
+    -webkit-border-radius: 50px 0 50px 0;
+    -moz-box-shadow: -3px 4px 0 #949494, -5px 5px 5px #041621;
+    -webkit-box-shadow: -3px 4px 0 #949494, -5px 5px 5px #041621;
+    box-shadow: -3px 4px 0 #949494, -5px 5px 5px #041621;
+    margin: 0 15px 15px 0;
+    letter-spacing: 1px;
+}
+    button:active {
+        position: relative;
+        top: 1px;
+        left: -1px;
+         -webkit-box-shadow: -3px 4px 0 #949494, -3px 3px 3px #041621;
+         -moz-box-shadow: -3px 4px 0 #949494, -3px 3px 5px #041621;
+         box-shadow: -3px 4px 0 #949494, -3px 3px 3px #041621;   
+    }       
+    button.left {
+        -webkit-border-radius: 0 50px 0 50px;
+        -moz-border-radius:  0 50px 0 50px;
+        -webkit-box-shadow: 3px 4px 0 #949494, 5px 5px 5px #041621;
+        -moz-box-shadow: 3px 4px 0 #949494, 5px 5px 5px #041621;
+        box-shadow: 3px 4px 0 #949494, 5px 5px 5px #041621;
+    }
+    button.left:active {
+        position: relative;
+        left: 1px;
+         -moz-box-shadow: 3px 4px 0 #949494, 3px 3px 4px #041621;
+         -webkit-box-shadow: 3px 4px 0 #949494, 3px 3px 4px #041621;
+         box-shadow: 3px 4px 0 #949494, 3px 3px 3px #041621;   
+    }
+
+.blue { background-color: #33e7fb; }
+.orange { background-color: #fc8724; }
+
+
+body.login {
+    background: url('/img/bg-grass.jpg') no-repeat left -90px #354b59;
+    position: relative;
+    padding: 0;
+    height: 100%;
+    max-height: 960px;
+}
+body.login button {
+    display: block;
+    width: 92%;
+    font-size: 2em;
+    height: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-sizing: border-box;
+    -webkit-box-shadow: none;
+    -webkit-border-radius: 40px 0 40px 0;
+    border: none;
+    position: relative;
+    line-height: 2.5em;
+    margin-bottom: .5em;
+}
+/* for transparent border */
+body.login button:after {
+    content: "";
+    text-indent: -9999px;
+    display: block;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0);
+    -webkit-border-radius: 46px 0 46px 0;
+    -webkit-box-shadow: 0 0 15px #000;
+    width: 100%;
+    height: inherit;
+    left: -6px;
+    top: -6px;
+    padding-bottom: 12px;
+    padding-right: 12px;
+}
+
+body.login button:active {
+    position: relative;
+    top: 2px;
+    left: 0;
+    -webkit-box-shadow: none;
+}
+
+body.login nav {
+    position: absolute;
+    top:  40%;
+    width: 100%;
+}
+body.login figure {
+    display: block;
+    position: relative;
+    width: 90%;
+    top: 12%;
+    margin: 0 auto;
+    text-align: center;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+body.login figure img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+body.login button#login {
+    background-color: rgba(43, 232, 219, 0.9);
+}
+body.login button#about {
+    background-color: rgba(176, 218, 90, 0.9);
+}
+body.login button#credits {
+    background-color: rgba(249, 234, 85, 0.9);
+}
+
+#main-nav {
+    display: none;    
+}
+
+body > menu {
+    padding: 0;
+    position: relative;
+}
+
+body > menu #menu {
+    position: absolute;
+    right: 0;
+}
+
+#locations li {
+    background-color: #fff;
+    
+}
+
+@media (max-width:320px) {
+    body.login {
+        background-position: 0 -230px;
+    }
+    body.login button {
+        -webkit-border-radius: 30px 0 30px 0;
+    }
+    body.login button:after {
+        left: -5px;
+        top:  -5px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        -webkit-border-radius: 35px 0 35px 0;
+    }
+    body.login {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,153 @@
+
+/*portrait AND landscape */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+
+	body{
+	max-width:100%;
+	overflow-x:hidden;
+	margin:0;
+	padding:0;
+	background:blue;
+	min-height:416px;
+	}
+	
+	#main-nav{
+	display:none;
+	height:60px;
+	font-size:12px;
+	}
+	
+	ul,li{
+	list-style:none;
+	margin:0;
+	padding:0;
+	}
+	
+	body.login .logo{
+	width:92%;
+	position:relative;
+	display:block;
+	margin:40px auto;
+	padding:0;
+	}
+	
+	body.login .logo img{
+	width:100%;
+	display:block;
+	}
+	
+	body.login nav{
+		top:none;
+		padding:0;
+		position:relative;
+		width:96%;
+		margin:20px auto 20px;
+	}
+	
+	body.login button{
+	height:2em;
+	font-weight:bold;
+		line-height:2em;
+	}
+	
+	body.nearbyvenues #locations li{
+	padding:4px;
+	border-bottom:black solid 1px;
+	width:96%;
+	padding:10px 4%;
+	}
+	
+	
+	body.nearbyvenues #locations li h2{
+	margin:0;
+	float:left;
+	width:80%;
+	}
+	
+	body.nearbyvenues #locations li p{
+	margin:0;
+	float:right:
+	width:20%;
+	}
+	
+	body.nearbyvenues #locations li p:after{
+	content:'';
+	display:block;
+	clear:both;
+	}
+	
+	menu{
+	height:60px;
+	margin:0;
+	background:olivegreen;
+	}
+	
+	menu button{
+	font-weight:bold;
+	font-family: 'FranklinGothicStd-DmCd',arial,sans-serif;
+	font-size:16px;
+	height:100%;
+	letter-spacing:0;
+	font-weight:bold;
+	box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+	letter-spacing:auto;
+	text-shadow:none;
+	border:0;
+	width:auto;
+	line-height:1em;
+	margin:0;
+	
+	}
+	
+    button:active,
+    button.left,
+    button.left:active
+     {
+
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+	}
+	
+	menu button:after{
+	content:'';
+	display:none;
+	}
+	
+	#back{
+	font-weight:
+	}
+	
+	#menu{
+	
+	}
+}
+
+
+}
+
+/*landscape only (doesnt seem to work) */
+@media only screen
+and (min-width : 321px) {
+
+	body{
+	background:red;
+	min-height:800px;
+	}
+
+}
+
+/*portrait only */
+@media only screen
+and (max-width : 320px) {
+
+	body{
+	background:green;
+	min-height:800px;
+	}
+
+}
