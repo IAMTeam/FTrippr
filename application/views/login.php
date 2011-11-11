@@ -1,4 +1,4 @@
-<?php $this->load->view('shared/header',array('title'=>$title,'showmenu'=>false)); ?>
+<php $this->load->view('shared/header',array('title'=>$title,'showmenu'=>false)); ?>
 
     <figure class="logo logo-home"><img src="/img/logo-front.png" alt="FieldTrippr" /></figure>
     <nav>
